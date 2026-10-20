@@ -1,0 +1,27 @@
+{
+  "data": "../data/trials.h5",
+  "images": "../data/images",
+  "splits": "../data/splits.json",
+  "output": "../outputs",
+  "num_classes": 5,
+  "seed": 2025,
+  "epochs": 100,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0002,
+  "lr_gamma": 0.99,
+  "workers": 0,
+  "device": "auto",
+  "pretrained": true,
+  "student_dropout": 0.4,
+  "private_dropout": 0.4,
+  "teacher_metric": "image_mean",
+  "teacher_losses": {"loss_MI": 0.1},
+  "student_losses": {
+    "loss_distill_weights_eeg": 2.0,
+    "loss_distill_feature_eeg": 2.0,
+    "loss_distill_weights_et": 2.0,
+    "loss_distill_feature_et": 2.0,
+    "loss_dec": 0.1
+  }
+}

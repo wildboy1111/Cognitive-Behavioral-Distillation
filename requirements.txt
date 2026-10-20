@@ -1,0 +1,6 @@
+torch>=2.0,<3
+torchvision>=0.15,<1
+numpy>=1.23,<2
+h5py>=3.8,<4
+scikit-learn>=1.2,<2
+Pillow>=9,<12
